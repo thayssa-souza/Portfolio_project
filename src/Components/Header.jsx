@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Routes, Link  } from 'react-router-dom';
 import * as S from '../Styles/headerStyles';
 import Home from '../Routes/Home';
 import About from '../Routes/About';
-import Project from '../Routes/Projects';
-import Contats from '../Routes/Contacts'
+import Projects from '../Routes/Projects';
+import Contacts from '../Routes/Contacts'
 import logo from './Images/logo.png';
 import burguerMenu from './Images/burguerMenu.jpg'
 import linkedinIcon from './Images/linkedinIcon.png';
@@ -16,20 +16,20 @@ export default function Header(){
         <S.Container>
             <S.Logo src={logo} alt='TAS escrito em dourado dentro de um círculo dourado, com o fundo preto' />
             <BrowserRouter>
-            <S.Navegation>
+            <nav>
                 <S.List>
                     <S.Item>
-                        <S.Links href='Home'>Início</S.Links>
+                        <S.Links to='/Home'>Início</S.Links>
                         </S.Item>
                     <S.Item>
-                        <S.Links href='S.Linksbout'>Sobre mim</S.Links>
+                        <S.Links to='/About'>Sobre mim</S.Links>
                         </S.Item>
                     <S.Item>
-                        <S.Links href=''>Projetos</S.Links>
+                        <S.Links to='/Projects'>Projetos</S.Links>
                         </S.Item>
-                    <S.Item><S.Links href=''>Contatos</S.Links></S.Item>
+                    <S.Item><S.Links to='/Contacts'>Contatos</S.Links></S.Item>
                 </S.List>
-            </S.Navegation>
+            </nav>
             <S.ContainerImages>
                 <a href="https://www.linkedin.com/in/thayssa-souza/">
                 <S.Linkedin src={linkedinIcon} alt='Ícone linkedin' />
@@ -40,10 +40,10 @@ export default function Header(){
             </S.ContainerImages>
 
         <Routes>
-        <Route path="Home" />
-        <Route path="About" element={<About />} />
-        {/* <Route path="Projects" element={<Projects />} /> */}
-        {/* <Route path="Contacts" element={<Contacts />} /> */}
+        <Route path="/Home" element={<Home />}/>
+        <Route path="/About" element={<About />} />
+        <Route path="/Projects" element={<Projects />} /> 
+        <Route path="/Contacts" element={<Contacts />} /> 
       </Routes>
     </BrowserRouter>
         </S.Container>

@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom'
 
 export const Container = styled.section`
     background-color: #000000;
-    border:solid orange;
     width:100%;
     height:15vh;
     display:flex;
@@ -21,9 +20,6 @@ export const Logo = styled.img`
     @media screen and (min-width:360px) and (max-width: 900px){
         height:10vh;
     }
-`
-
-export const Navegation = styled.nav`
 `
 
 export const List = styled.ul`
