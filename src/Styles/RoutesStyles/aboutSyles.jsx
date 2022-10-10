@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
-import {Link} from 'react-router-dom'
 
 export const ContainerAbout = styled.section`
     width:100%;
@@ -46,7 +45,7 @@ export const secondAboutMe = styled.section`
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top:5vh;
+    margin-top:7vh;
 `
 
 export const secondImgAbout = styled.img`
@@ -65,7 +64,8 @@ export const thirdAboutMe = styled.section`
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top:5vh;
+    margin-top:12vh;
+    margin-bottom:5vh;
 `
 
 export const thirdImgAbout = styled.img`

@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { BrowserRouter, Route, Routes, Link  } from 'react-router-dom';
 import * as S from '../Styles/headerStyles';
 import Home from '../Routes/Home';
@@ -10,7 +9,6 @@ import logo from './Images/logo.png';
 import burguerMenu from './Images/burguerMenu.jpg'
 import linkedinIcon from './Images/linkedinIcon.png';
 import githubIcon from './Images/githubIcon.png';
-import Main from './Main'
 
 export default function Header(){
     return(

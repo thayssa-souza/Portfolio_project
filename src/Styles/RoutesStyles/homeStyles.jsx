@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
-import {Link} from 'react-router-dom'
 
 export const Section = styled.section`
     background-color: #000000;    
@@ -16,7 +15,7 @@ export const ContainerHome = styled.section`
 
 export const thayssaPic = styled.img`
     height:60vh;
-    border-radius: 100px;
+    border-radius: 140px;
 `
 
 export const TextContainer = styled.section`
