@@ -39,7 +39,7 @@ export const Subtitle = styled.h2`
     margin-top:3vh;
 `
 
-export const Languages = styled.div`
+export const Languages = styled.button`
     display:flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,8 @@ export const Languages = styled.div`
     font-size:18px;
     color:white;
     border-radius:80px;
-    background-color: #e5ac5f;
+    border: solid #e5ac5f;
+    background-color: #000000;
     margin-top:10vh;
     &:hover{
         cursor:pointer;

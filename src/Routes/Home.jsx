@@ -11,9 +11,7 @@ export default function Home(){
             <S.TextContainer>
                 <S.Title>Thayssa A. Souza</S.Title>
                 <S.Subtitle>Desenvolvedora Web Full-Stack</S.Subtitle>
-                <S.Languages>
-                    Habilidades
-                </S.Languages>
+                <S.Languages>Habilidades</S.Languages>
             </S.TextContainer>
     </S.ContainerHome>
     )
