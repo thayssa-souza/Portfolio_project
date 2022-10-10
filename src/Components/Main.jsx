@@ -19,7 +19,7 @@ export default function Main(){
                 </S.TextContainer>
         </S.ContainerHome>
 
-            <S.ContainerAbout id='about'>
+            {/* <S.ContainerAbout id="about">
                 <S.AboutTitle>Sobre mim</S.AboutTitle>
                 <S.Dash></S.Dash>
                 <S.AboutMe>
@@ -30,7 +30,7 @@ export default function Main(){
                     </div>
                     <S.firstImgAbout src={thayssaSecondPic} alt="" />
                 </S.AboutMe>
-            </S.ContainerAbout>
+            </S.ContainerAbout> */}
         </S.Section>
     )
 }

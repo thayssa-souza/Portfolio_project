@@ -10,6 +10,7 @@ import logo from './Images/logo.png';
 import burguerMenu from './Images/burguerMenu.jpg'
 import linkedinIcon from './Images/linkedinIcon.png';
 import githubIcon from './Images/githubIcon.png';
+import Main from './Main'
 
 export default function Header(){
     return(
@@ -19,15 +20,15 @@ export default function Header(){
             <nav>
                 <S.List>
                     <S.Item>
-                        <S.Links to='/Home'>Início</S.Links>
-                        </S.Item>
-                    <S.Item>
-                        <S.Links to='/About'>Sobre mim</S.Links>
-                        </S.Item>
+                        <S.Links to='/'>Início</S.Links>
+                    </S.Item>
                     <S.Item>
                         <S.Links to='/Projects'>Projetos</S.Links>
-                        </S.Item>
+                    </S.Item>
                     <S.Item><S.Links to='/Contacts'>Contatos</S.Links></S.Item>
+                    <S.Item>
+                        <S.Links to="/About">Sobre mim</S.Links>
+                    </S.Item>
                 </S.List>
             </nav>
             <S.ContainerImages>
@@ -39,13 +40,13 @@ export default function Header(){
                 </a>
             </S.ContainerImages>
 
-        <Routes>
-        <Route path="/Home" element={<Home />}/>
-        <Route path="/About" element={<About />} />
-        <Route path="/Projects" element={<Projects />} /> 
-        <Route path="/Contacts" element={<Contacts />} /> 
-      </Routes>
-    </BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />}/>
+                <Route path="/About" element={<About/>} />
+                <Route path="/Projects" element={<Projects />} /> 
+                <Route path="/Contacts" element={<Contacts />} /> 
+            </Routes>
+            </BrowserRouter>
         </S.Container>
     )
 }
