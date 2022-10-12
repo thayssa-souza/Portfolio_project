@@ -6,7 +6,7 @@ export const Container = styled.section`
     background-color: #000000;
     width:100%;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     @media screen and (min-width:360px) and (max-width: 900px){
@@ -45,35 +45,4 @@ export const Item = styled.li`
 export const Links = styled(Link)`
     text-decoration:none;
     color: #FFFF;
-`
-
-export const ContainerImages = styled.div`
-    width:15vw;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-`
-
-export const Linkedin = styled.img`
-    height:5vh;
-    width:2.4vw;
-    &:hover{
-        height:6vh;
-        cursor:pointer;
-    }
-    @media screen and (min-width:360px) and (max-width: 900px){
-        height:3vh;
-    }
-`
-
-export const Github = styled.img`
-    height:5vh;
-    width:2.4vw;
-    &:hover{
-        height:6vh;
-        cursor:pointer;
-    }
-    @media screen and (min-width:360px) and (max-width: 900px){
-        height:3vh;
-    }
 `

@@ -7,8 +7,6 @@ import Projects from '../Routes/Projects';
 import Contacts from '../Routes/Contacts'
 import logo from './Images/logo.png';
 import burguerMenu from './Images/burguerMenu.jpg'
-import linkedinIcon from './Images/linkedinIcon.png';
-import githubIcon from './Images/githubIcon.png';
 
 export default function Header(){
     return(
@@ -29,14 +27,7 @@ export default function Header(){
                     </S.Item>
                 </S.List>
             </nav>
-            <S.ContainerImages>
-                <a href="https://www.linkedin.com/in/thayssa-souza/">
-                <S.Linkedin src={linkedinIcon} alt='Ícone linkedin' />
-                </a>
-                <a href="https://github.com/thayssa-souza">
-                <S.Github src={githubIcon} alt='ícone github' />
-                </a>
-            </S.ContainerImages>
+            
 
             <Routes>
                 <Route path="/" element={<Home />}/>

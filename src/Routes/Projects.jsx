@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import styled, { createGlobalStyle, keyframes } from "styled-components";
-import { BrowserRouter, Route, Routes, Link  } from 'react-router-dom';
-import * as S from '../Styles/headerStyles';
+import * as S from '../Styles/RoutesStyles/projectsStyles';
 
 export default function Projects(){
     return(
-        <>
-        </>
+        <S.ContainerProjects>
+            <S.ProjectTitle>Projetos</S.ProjectTitle>
+            <S.Dash></S.Dash>
+        </S.ContainerProjects>
     )
 }
