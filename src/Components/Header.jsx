@@ -21,10 +21,10 @@ export default function Header(){
                     <S.Item>
                         <S.Links to='/Projects'>Projetos</S.Links>
                     </S.Item>
-                    <S.Item><S.Links to='/Contacts'>Contatos</S.Links></S.Item>
                     <S.Item>
                         <S.Links to="/About">Sobre mim</S.Links>
                     </S.Item>
+                    <S.Item><S.Links to='/Contacts'>Contatos</S.Links></S.Item>
                 </S.List>
             </nav>
             
