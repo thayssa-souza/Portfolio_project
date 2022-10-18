@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
+import Carousel from "nuka-carousel/lib/carousel";
 
 export const ContainerProjects = styled.section`
     width:100%;
+    height:85vh;
     background-color: #000000;
     display:flex;
     flex-direction: column;
@@ -22,34 +23,17 @@ export const Dash = styled.div`
     margin-top:1.5vh;
 `
 
-export const FirstProjects = styled.section`
+export const CarouselContainer = styled(Carousel)`
     display:flex;
-    justify-content: space-evenly;
-    align-items: center;
     margin-top:17vh;
 `
 
-export const ProjectImgAndText = styled.div`
-    width:30vw;
-    height:40vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-`
-
-export const ProjectsImg = styled.img`
-    width:25vw;
-    height:35vh;
+export const Img = styled.img`
+    width:29vw;
+    height:45vh;
+    border: 10px solid #e5ac5f;
     &:hover{
-        width:29vw;
-        height:39vh;
         cursor:pointer;
+        border: none;
     }
-`
-
-export const SecondProjects = styled.div`
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top:15vh;
 `
