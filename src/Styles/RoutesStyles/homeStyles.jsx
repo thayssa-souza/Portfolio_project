@@ -54,6 +54,7 @@ export const Languages = styled.button`
     border: solid #e5ac5f;
     background-color: #000000;
     margin-top:10vh;
+    margin-left:18vh;
     &:hover{
         cursor:pointer;
         background-color: #c69552;
