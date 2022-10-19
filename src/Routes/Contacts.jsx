@@ -40,11 +40,11 @@ export default function Contacts(){
                     <S.Button>Enviar</S.Button>
                 </S.Form>
                 <S.ContainerSocials>
-                    <a href="https://github.com/thayssa-souza">
+                    <a href="https://github.com/thayssa-souza" target="_blank">
                         <S.btnGithub>Github</S.btnGithub>
                     </a> 
 
-                    <a href="https://www.linkedin.com/in/thayssa-souza/">
+                    <a href="https://www.linkedin.com/in/thayssa-souza/" target="_blank">
                         <S.btnLinkedin>Linkedin</S.btnLinkedin>
                     </a> 
             </S.ContainerSocials>

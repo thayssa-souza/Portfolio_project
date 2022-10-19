@@ -9,12 +9,12 @@ export default function Footer(){
     return(
         <S.Container> 
             <S.Div>
-                <a href="https://github.com/thayssa-souza">
+                <a href="https://github.com/thayssa-souza" target="_blank">
                     <S.Github src={githubIcon} alt='ícone github' />
                 </a>
             </S.Div>
             <S.Div>
-                <a href="https://www.linkedin.com/in/thayssa-souza/">
+                <a href="https://www.linkedin.com/in/thayssa-souza/" target="_blank">
                     <S.Linkedin src={linkedinIcon} alt='Ícone linkedin' />
                 </a>
             </S.Div>

@@ -38,17 +38,29 @@ export default function Projects(){
             
             <S.CarouselContainer {...settings}>
                 <div>
-                    <S.Img src={lolImg} alt="" />
+                    <a href="https://thayssa-souza.github.io/LeagueOfLegends_LoginPage/" target="_blank"> 
+                        <S.Img src={lolImg} alt="" />
+                    </a>
                 </div>
                 <div>
-                    <S.Img src={recipesImg} alt="" />
+                    <a href="recipes-seven-zeta.vercel.app" target="_blank">
+                        <S.Img src={recipesImg} alt="" />
+                    </a>
                 </div>
                 <div>
-                    <S.Img src={cresposImg} alt="" />
+                    <a href="thayssa-souza.github.io/Crespos/" target="_blank">
+                        <S.Img src={cresposImg} alt="" />
+                    </a>
                 </div>
-                    <S.Img src={theWitcherImg} alt="" />
                 <div>
-                    <S.Img src={odsImgC} alt="" />
+                    <a href="https://thayssa-souza.github.io/The-Witcher/" target="_blank">
+                        <S.Img src={theWitcherImg} alt="" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://objetivos-desenvolvimento-sustentavel.vercel.app/" target="_blank">
+                        <S.Img src={odsImgC} alt="" />
+                    </a>
                 </div>
                 <div>
                     <S.Img src={letsMoviesImg} alt="" />
