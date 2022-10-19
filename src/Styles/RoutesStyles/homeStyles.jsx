@@ -15,7 +15,7 @@ export const ContainerHome = styled.section`
 
 export const thayssaPic = styled.img`
     height:60vh;
-    border-radius: 140px;
+    border-radius: 100%;
 `
 
 export const TextContainer = styled.section`

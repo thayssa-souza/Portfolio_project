@@ -23,8 +23,8 @@ export default function Projects(){
           adaptiveWidth: false,
           enableKeyboardControls: true,
           defaultControlsConfig: {
-            nextButtonText: "Próximo",
-            prevButtonText: "Anterior",
+            nextButtonText: "Próximo >>",
+            prevButtonText: "<< Anterior",
             pagingDotsStyle: {
               fill: "black",
             },
