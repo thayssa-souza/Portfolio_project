@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 
 export const Section = styled.section`
     width:100%;
-    height:85vh;
+    height:80vh;    
 `
 export const Title = styled.div`
     display:flex;
@@ -27,70 +26,97 @@ export const Dash = styled.div`
 `
 
 export const ContainerContacts = styled.section`
-    width:100%;
-    height:85%;
+    height:73vh;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
 `
 
-export const ContainerGithub = styled.div`
-    width:28vw;
-    height:42vh;
+
+export const Form = styled.form`
+    width:40%;
+    height:60vh;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top:4vh;
-`
-
-export const githubImg = styled.img`
-    width:26vw;
-    height:40vh;
-    margin-top:2vh;
-    &:hover{
-        width:28vw;
-        height:42vh;
-        cursor:pointer;
-     }
-`
-
-export const ContainerLinkedin = styled.div`
-    width:28vw;
-    height:42vh;
-    display:flex;
-    flex-direction: column;
-    margin-top:4vh;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 `
 
-export const linkedinImg = styled.img`
-    width:26vw;
-    height:40vh;
-    margin-top:2vh;
-    &:hover{
-        width:28vw;
-        height:42vh;
-        cursor:pointer;
-     }
-`
-
-export const ContainerEmail = styled.div`
-    width:28vw;
-    height:42vh;
+export const ContactsBox = styled.div`
+    width:100%;
     display:flex;
     flex-direction: column;
-    margin-top:4vh;
-    justify-content: center;
-    align-items: center;
 `
 
-export const emailImg = styled.img`
+export const LabelContact = styled.label`
+    color:white;
+    font-size:18px;
+    margin-bottom: 1vh;
+`
+export const InputContact = styled.input`
+    width:30vw;
+    height:7vh;
+    font-size:18px;
+    border-radius: 10px;
+    margin-left:2vw;
+    margin-bottom:4vh;
+`
+
+export const TextMessage = styled.textarea`
+    width:30vw;
+    height:15vh;
+    font-size:18px;
+    border-radius: 10px;
+    margin-left:2vw;
+    margin-bottom:2vh;
+`
+
+export const Button = styled.button`
     width:7vw;
-    margin-top:2vh;
+    height:4vh;
+    font-size:15px;
+    font-weight: bold;
+    margin-right:3vw;
+`
+
+export const ContainerSocials = styled.section`
+    height:40vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    margin-right:7vw;
+`
+
+export const btnGithub = styled.button`
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 13vw;
+    height:6vh;
+    font-size:18px;
+    color:white;
+    border-radius:80px;
+    border: solid #e5ac5f;
+    background-color: #000000;
     &:hover{
-        width:9vw;
-        cursor:pointer
+        cursor:pointer;
+        background-color: #c69552;
+    }
+`
+
+export const btnLinkedin = styled.button`
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 13vw;
+    height:6vh;
+    font-size:18px;
+    color:white;
+    border-radius:80px;
+    border: solid #e5ac5f;
+    background-color: #000000;
+    &:hover{
+        cursor:pointer;
+        background-color: #c69552;
     }
 `

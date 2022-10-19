@@ -1,17 +1,21 @@
 import React, { useState, useEffect, useRef } from "react";
+import emailjs from 'emailjs-com';
 import * as S from '../Styles/RoutesStyles/contactsStyles';
-import emailIcon from '../Components/Images/emailIcon.png';
-import githubImg from '../Components/Images/githubImg.png';
-import linkedinImg from '../Components/Images/linkedinImg.png';
-import PropsEmail from "../Components/PropsEmail";
-import PropsGithub from '../Components/PropsGithub';
-import PropsLinkedin from "../Components/PropsLinkedin";
-
 
 export default function Contacts(){
-    const [openEmail, setOpenEmail] = useState(false);
-    const [openGithub, setOpenGithub] = useState(false);
-    const [openLinkedin, setOpenLinkedin] = useState(false);
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_m0svz8l', 'template_5dndcvv', form.current, 'Vo4tMeC9Rr6NKKpRs')
+            .then((result) => {
+                console.log("E-mail enviado com sucesso!");
+            }, (error) =>{
+                console.log("Erro ao tentar enviar o e-mail, tente novamente.");
+        });
+        form.current.reset()
+    }
 
     return(
         <S.Section>
@@ -20,34 +24,30 @@ export default function Contacts(){
                 <S.Dash></S.Dash>
             </S.Title>
             <S.ContainerContacts>
-            <S.ContainerGithub>
-                <PropsGithub modal={() => {
-                    setOpenGithub(!openGithub);
-                }} />
-                {openGithub &&
-                <a href="https://github.com/thayssa-souza">
-                    <S.githubImg src={githubImg} alt="Perfil no github" />
-                </a> }
-            </S.ContainerGithub>
-            
-            <S.ContainerLinkedin>
-            <PropsLinkedin modal={() => {
-                    setOpenLinkedin(!openLinkedin);
-                }} />
-                {openLinkedin &&
-                <a href="https://www.linkedin.com/in/thayssa-souza/">
-                    <S.linkedinImg src={linkedinImg} alt="Perfil no Linkedin"/>
-                </a> }
-            </S.ContainerLinkedin>
+                <S.Form ref={form} onSubmit={sendEmail}>
+                    <S.ContactsBox>
+                        <S.LabelContact for="name">Nome</S.LabelContact>
+                        <S.InputContact id="name" type="text" name="name" placeholder="Digite seu nome" required/>
+                    </S.ContactsBox>
+                    <S.ContactsBox>
+                        <S.LabelContact for="email">Email</S.LabelContact>
+                        <S.InputContact id="email" type="email" name="email" placeholder=" Digite seu e-mail" required/>
+                    </S.ContactsBox>
+                    <S.ContactsBox>
+                        <S.LabelContact for="message">Mensagem</S.LabelContact>
+                        <S.TextMessage id="message" type="text" name="message" placeholder="Digite a mensagem" required/>
+                    </S.ContactsBox>
+                    <S.Button>Enviar</S.Button>
+                </S.Form>
+                <S.ContainerSocials>
+                    <a href="https://github.com/thayssa-souza">
+                        <S.btnGithub>Github</S.btnGithub>
+                    </a> 
 
-            <S.ContainerEmail>
-                <PropsEmail modal={() => {
-                    setOpenEmail(!openEmail);
-                }} />
-                {openEmail && <a href = "mailto:thayssa.souzaf@gmail.com">
-                    <S.emailImg src={emailIcon} alt="Foto de um e-mail" />
-                </a>}               
-            </S.ContainerEmail>
+                    <a href="https://www.linkedin.com/in/thayssa-souza/">
+                        <S.btnLinkedin>Linkedin</S.btnLinkedin>
+                    </a> 
+            </S.ContainerSocials>
         </S.ContainerContacts>
         </S.Section>
     )
