@@ -2,10 +2,10 @@ import styled, { createGlobalStyle, keyframes } from "styled-components";
 
 export const Container = styled.section`
     background-color: #000000;
-     width:100%;
-     height:14vh;
-     display:flex;
-    justify-content: flex-end;
+    width:100%;
+    height:14vh;
+    display:flex;
+    justify-content: center;
     align-items: center;
 `
 
@@ -18,12 +18,11 @@ export const Div = styled.div`
 `
 
 export const Github = styled.img`
-    height:6vh;
-    width:3vw;
-    margin-top:4vh;
+    height:5vh;
+    width:2.5vw;
     &:hover{
-        height:7vh;
-        width:4vw;
+        height:6vh;
+        width:3vw;
         cursor:pointer;
     }
     @media screen and (min-width:360px) and (max-width: 900px){
@@ -32,12 +31,11 @@ export const Github = styled.img`
 `
 
 export const Linkedin = styled.img`
-    height:6vh;
-    width:3vw;
-    margin-top:4vh;
+    height:5vh;
+    width:2.5vw;
     &:hover{
-        height:7vh;
-        width:4vw;
+        height:6vh;
+        width:3vw;
         cursor:pointer;
     }
     @media screen and (min-width:360px) and (max-width: 900px){
@@ -46,12 +44,11 @@ export const Linkedin = styled.img`
 `
 
 export const Email = styled.img`
-    height:6vh;
-    width:3vw;
-    margin-top:4vh;
+    height:5vh;
+    width:2.5vw;
     &:hover{
-        height:7vh;
-        width:4vw;
+        height:6vh;
+        width:3vw;
         cursor:pointer;
     }
 `

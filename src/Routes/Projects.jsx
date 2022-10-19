@@ -43,12 +43,12 @@ export default function Projects(){
                     </a>
                 </div>
                 <div>
-                    <a href="recipes-seven-zeta.vercel.app" target="_blank">
+                    <a href="https://recipes-seven-zeta.vercel.app/" target="_blank">
                         <S.Img src={recipesImg} alt="" />
                     </a>
                 </div>
                 <div>
-                    <a href="thayssa-souza.github.io/Crespos/" target="_blank">
+                    <a href="https://thayssa-souza.github.io/Crespos/" target="_blank">
                         <S.Img src={cresposImg} alt="" />
                     </a>
                 </div>

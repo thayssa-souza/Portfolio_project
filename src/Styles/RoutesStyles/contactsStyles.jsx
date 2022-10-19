@@ -2,7 +2,7 @@ import styled, { createGlobalStyle, keyframes } from "styled-components";
 
 export const Section = styled.section`
     width:100%;
-    height:80vh;    
+    height:85vh;    
 `
 export const Title = styled.div`
     display:flex;
