@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-//import Carousel from "nuka-carousel/lib/carousel";
+import Footer from '../Components/Footer';
 import * as S from '../Styles/RoutesStyles/projectsStyles';
 import cresposImg from '../Components/Images/cresposImg.png';
 import lolImg from '../Components/Images/lolImg.png';
@@ -14,10 +14,10 @@ export default function Projects(){
           wrapAround: true,
           pauseOnHover: true,
           autoplay: true,
-          slidesToShow: 3,
-          speed: 800,
+          slidesToShow: 2,
+          speed: 900,
           cellAlign: "center",
-          cellSpacing: 50,
+          cellSpacing: 300,
           slidesToScroll: 1,
           dragThreshold: 1,
           adaptiveWidth: false,
@@ -65,7 +65,9 @@ export default function Projects(){
                 <div>
                     <S.Img src={letsMoviesImg} alt="" />
                 </div>
-            </S.CarouselContainer>
+            </S.CarouselContainer>   
+
+            <Footer />
 
         </S.ContainerProjects>
     )

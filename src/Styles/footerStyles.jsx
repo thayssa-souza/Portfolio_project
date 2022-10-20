@@ -7,6 +7,11 @@ export const Container = styled.section`
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-top:9vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        display:flex;
+        justify-content: space-evenly;
+    }
 `
 
 export const Div = styled.div`
@@ -15,6 +20,9 @@ export const Div = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width:360px) and (max-width:800px){
+        
+    }
 `
 
 export const Github = styled.img`
@@ -25,8 +33,14 @@ export const Github = styled.img`
         width:3vw;
         cursor:pointer;
     }
-    @media screen and (min-width:360px) and (max-width: 900px){
-        height:3vh;
+    @media screen and (min-width:360px) and (max-width: 800px){
+        width:8vw;
+        height:4vh;
+        &:hover{
+        width:10vw;
+        height:5vh;
+        cursor:pointer;
+        }
     }
 `
 
@@ -38,8 +52,14 @@ export const Linkedin = styled.img`
         width:3vw;
         cursor:pointer;
     }
-    @media screen and (min-width:360px) and (max-width: 900px){
-        height:3vh;
+    @media screen and (min-width:360px) and (max-width: 800px){
+        width:8vw;
+        height:4vh;
+        &:hover{
+        width:10vw;
+        height:5vh;
+        cursor:pointer;
+        }
     }
 `
 
@@ -50,5 +70,14 @@ export const Email = styled.img`
         height:6vh;
         width:3vw;
         cursor:pointer;
+    }
+    @media screen and (min-width:360px) and (max-width: 800px){
+        width:8vw;
+        height:4vh;
+        &:hover{
+        width:10vw;
+        height:5vh;
+        cursor:pointer;
+        }
     }
 `

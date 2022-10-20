@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import emailjs from 'emailjs-com';
+import Footer from '../Components/Footer';
 import * as S from '../Styles/RoutesStyles/contactsStyles';
 
 export default function Contacts(){
@@ -49,6 +50,8 @@ export default function Contacts(){
                     </a> 
             </S.ContainerSocials>
         </S.ContainerContacts>
+
+        <Footer />
         </S.Section>
     )
 }

@@ -8,7 +8,7 @@ export default function App(){
     <>
     <S.GlobalStyle />
     <Header />
-    <Footer />
+    {/* <Footer /> */}
     </>
   )
 }

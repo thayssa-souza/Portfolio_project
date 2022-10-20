@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import Footer from '../Components/Footer';
 import * as S from '../Styles/RoutesStyles/homeStyles';
 import thayssaPic from "../Components/Images/thayssaPic.jpeg";
 import htmlIconC from '../Components/Images/htmlIconC.png';
@@ -73,6 +74,7 @@ export default function Home(){
             </S.CarouselContainer>
 
             </S.SecondContainerHome>
+            <Footer />
     </S.Section>
     )
 }

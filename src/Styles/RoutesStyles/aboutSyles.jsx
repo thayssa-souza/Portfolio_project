@@ -27,6 +27,13 @@ export const firstAboutMe = styled.div`
     justify-content: space-evenly;
     align-items: center;
     margin-top:7vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        margin-top:30vh;
+    }
+
 `
 
 export const firstText = styled.p`
@@ -35,10 +42,17 @@ export const firstText = styled.p`
     font-size:20px;
     line-height: 6vh;
     text-align: center;
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:100%;
+        font-size:25px;
+    }
 `
 
 export const firstImgAbout = styled.img`
     height:55vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        margin-top:5vh;
+    }
 `
 
 export const secondAboutMe = styled.section`
@@ -46,10 +60,19 @@ export const secondAboutMe = styled.section`
     justify-content: space-evenly;
     align-items: center;
     margin-top:7vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        margin-top:30vh;
+    }
 `
 
 export const secondImgAbout = styled.img`
     height:55vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        margin-top:10vh;
+    }
 `
 
 export const secondText = styled.p`
@@ -58,6 +81,11 @@ export const secondText = styled.p`
     font-size:20px;
     line-height: 5vh;
     text-align: center;
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:100%;
+        font-size:25px;
+        margin-top:5vh;
+    }
 `
 
 export const thirdAboutMe = styled.section`
@@ -66,10 +94,18 @@ export const thirdAboutMe = styled.section`
     align-items: center;
     margin-top:12vh;
     margin-bottom:5vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:100%;
+        display:flex;
+        flex-direction:column;
+    }
 `
 
 export const thirdImgAbout = styled.img`
     height:55vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        margin-top:5vh;
+    }
 `
 
 export const thirdText = styled.p`
@@ -78,4 +114,9 @@ export const thirdText = styled.p`
     font-size:20px;
     line-height: 5vh;
     text-align: center;
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:100%;
+        font-size:25px;
+        margin-top:5vh;
+    }
 `

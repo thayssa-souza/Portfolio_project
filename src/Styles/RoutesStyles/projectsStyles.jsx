@@ -3,7 +3,7 @@ import Carousel from "nuka-carousel/lib/carousel";
 
 export const ContainerProjects = styled.section`
     width:100%;
-    height:85vh;
+    height:100vh;
     background-color: #000000;
     display:flex;
     flex-direction: column;
@@ -35,5 +35,8 @@ export const Img = styled.img`
     &:hover{
         cursor:pointer;
         border: none;
+    }
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:70vw;
     }
 `

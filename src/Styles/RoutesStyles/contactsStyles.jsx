@@ -2,7 +2,8 @@ import styled, { createGlobalStyle, keyframes } from "styled-components";
 
 export const Section = styled.section`
     width:100%;
-    height:85vh;    
+    height:95vh;
+    background-color: #000000;
 `
 export const Title = styled.div`
     display:flex;
@@ -30,6 +31,10 @@ export const ContainerContacts = styled.section`
     display:flex;
     justify-content: space-evenly;
     align-items: center;
+    @media screen and (min-width:360px) and (max-width:800px){
+        display:flex;
+        flex-direction: column;
+    }
 `
 
 
@@ -40,6 +45,10 @@ export const Form = styled.form`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:100%;
+        margin-top:10vh;
+    }
 `
 
 export const ContactsBox = styled.div`
@@ -52,6 +61,10 @@ export const LabelContact = styled.label`
     color:white;
     font-size:18px;
     margin-bottom: 1vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        margin-left:3vw;
+        font-size:22px;
+    }
 `
 export const InputContact = styled.input`
     width:30vw;
@@ -60,6 +73,9 @@ export const InputContact = styled.input`
     border-radius: 10px;
     margin-left:2vw;
     margin-bottom:4vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:90%;
+    }
 `
 
 export const TextMessage = styled.textarea`
@@ -69,6 +85,9 @@ export const TextMessage = styled.textarea`
     border-radius: 10px;
     margin-left:2vw;
     margin-bottom:2vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:90%;
+    }
 `
 
 export const Button = styled.button`
@@ -77,6 +96,11 @@ export const Button = styled.button`
     font-size:15px;
     font-weight: bold;
     margin-right:3vw;
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:20vw;
+        font-size:20px;
+        margin-top:2vh;
+    }
 `
 
 export const ContainerSocials = styled.section`
@@ -85,6 +109,13 @@ export const ContainerSocials = styled.section`
     flex-direction:column;
     justify-content: space-evenly;
     margin-right:7vw;
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:90%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top:8vh;
+    }
 `
 
 export const btnGithub = styled.button`
@@ -102,6 +133,15 @@ export const btnGithub = styled.button`
         cursor:pointer;
         background-color: #c69552;
     }
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:30vw;
+        height:7vh;
+        font-size:22px;
+        &:hover{
+        cursor:pointer;
+        background-color: #c69552;
+        }
+    }
 `
 
 export const btnLinkedin = styled.button`
@@ -118,5 +158,14 @@ export const btnLinkedin = styled.button`
     &:hover{
         cursor:pointer;
         background-color: #c69552;
+    }
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:30vw;
+        height:7vh;
+        font-size:22px;
+        &:hover{
+        cursor:pointer;
+        background-color: #c69552;
+        }
     }
 `

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import * as S from '../Styles/RoutesStyles/aboutSyles';
+import Footer from '../Components/Footer';
 import thayssaSecondPic from '../Components/Images/thayssaSecondPic.png';
 import thayssaThirdPic from '../Components/Images/thayssaThirdPic.png';
 import thayssaFourPic from '../Components/Images/thayssaFourPic.png'
@@ -24,6 +25,8 @@ export default function About(){
                 <S.thirdText>Gosto de passar meu tempo livre junto aos livros. Fã de Harry Potter (#TeamCorvinal) e suspense, tenho como livro preferido It do Stephen King, seguido por A Ordem da Fênix de Jk Rowling e O Poderoso Chefão de Mario Puzo.</S.thirdText>
                 <S.thirdImgAbout src={thayssaFourPic} alt=""/>
             </S.thirdAboutMe>
+
+            <Footer />
         </S.ContainerAbout>
     )
 }

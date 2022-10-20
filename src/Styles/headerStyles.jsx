@@ -9,16 +9,15 @@ export const Container = styled.section`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    @media screen and (min-width:360px) and (max-width: 900px){
-        width:100%;
+    @media screen and (min-width:360px) and (max-width:800px){
         height:10vh;
     }
 `
 
 export const Logo = styled.img`
     height:15vh;
-    @media screen and (min-width:360px) and (max-width: 900px){
-        height:10vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        height:7vh;
     }
 `
 
@@ -28,6 +27,9 @@ export const List = styled.ul`
     display:flex;
     justify-content: space-evenly;
     align-items: center;
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:86vw;
+    }
 `
 
 export const Item = styled.li`
@@ -39,6 +41,14 @@ export const Item = styled.li`
     &:hover{
         font-size:24px;
         cursor:pointer;
+    }
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:22vw;
+        font-size:16px;
+        &:hover{
+        font-size:16px;
+        cursor:pointer;
+    }
     }
 `
 

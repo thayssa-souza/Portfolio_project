@@ -14,12 +14,20 @@ export const FirstContainerHome = styled.section`
     height: 85vh;
     display:flex;
     justify-content: space-evenly;
-    align-items:center; 
+    align-items:center;
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:100%;
+        display:flex;
+        flex-direction: column;
+    } 
 `
 
 export const thayssaPic = styled.img`
     height:60vh;
     border-radius: 100%;
+    @media screen and (min-width:360px) and (max-width:800px){
+        height:40vh;
+    }
 `
 
 export const TextContainer = styled.section`
@@ -33,6 +41,10 @@ export const Title = styled.h2`
     color:#c69552;
     display:flex;
     justify-content: center;
+    @media screen and (min-width:360px) and (max-width:800px){
+        font-size: 40px;
+        margin-top:5vh;
+    }
 `
 
 export const Subtitle = styled.h2`
@@ -40,6 +52,10 @@ export const Subtitle = styled.h2`
     font-weight:400;
     color: #FFFF;
     margin-top:3vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        text-align: center;
+        font-size:28px;
+    }
 `
 
 export const Languages = styled.button`
@@ -54,10 +70,16 @@ export const Languages = styled.button`
     border: solid #e5ac5f;
     background-color: #000000;
     margin-top:10vh;
-    margin-left:18vh;
+    margin-left:8vw;
     &:hover{
         cursor:pointer;
         background-color: #c69552;
+    }
+    @media screen and (min-width:360px) and (max-width:800px){
+        width:45vw;
+        font-size:22px;
+        margin-top:6vh;
+        margin-left:25vw;
     }
 `
 
@@ -66,6 +88,10 @@ export const SecondContainerHome = styled.section`
     height:85vh;
     display:flex;
     flex-direction:column;
+    @media screen and (min-width:360px) and (max-width:800px){
+        margin-top:5vh;
+        height:70vh;
+    }
 `
 
 export const SkillsTitle = styled.h2`
@@ -86,6 +112,9 @@ export const Dash = styled.div`
 export const CarouselContainer = styled(Carousel)`
     display:flex;
     margin-top:17vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        margin-top:8vh;
+    }
 `
 
 export const Figure = styled.figure`
@@ -98,4 +127,7 @@ export const Figure = styled.figure`
 
 export const Icon = styled.img`
     height:18vh;
+    @media screen and (min-width:360px) and (max-width:800px){
+        height:10vh;
+    }
 `
