@@ -38,5 +38,10 @@ export const Img = styled.img`
     }
     @media screen and (min-width:360px) and (max-width:800px){
         width:70vw;
+        height:40vh;
+        &:hover{
+            cursor:pointer;
+            border: none;
+        }
     }
 `

@@ -97,7 +97,7 @@ export const Button = styled.button`
     font-weight: bold;
     margin-right:3vw;
     @media screen and (min-width:360px) and (max-width:800px){
-        width:20vw;
+        width:25vw;
         font-size:20px;
         margin-top:2vh;
     }
